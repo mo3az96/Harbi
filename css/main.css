@@ -521,7 +521,7 @@ html[dir=ltr] .header-nav .link-li:last-child {
   width: 100%;
   height: 100%;
   background-color: rgba(91, 139, 90, 0.75);
-  z-index: 9;
+  z-index: 9999;
 }
 .xs-nav .main-xs-nav {
   display: flex;

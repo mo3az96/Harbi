@@ -1,0 +1,323 @@
+@keyframes inscreen {
+    0% {
+        right: -259px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes inscreen-en {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.inscreen {
+    animation: inscreen 0.4s ease forwards;
+}
+
+html[dir="ltr"] .inscreen {
+    animation: inscreen-en 0.4s ease forwards;
+}
+
+@keyframes outscreen {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -100%;
+    }
+}
+
+.outscreen {
+    animation: outscreen 0.5s ease forwards;
+}
+
+@keyframes outscreen-en {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+html[dir="ltr"] .outscreen {
+    animation: outscreen-en 0.5s ease forwards;
+}
+
+
+@keyframes vibe {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    25% {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        -o-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    75% {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+.fixall {
+    margin: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    text-decoration: none;
+
+    &:hover {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+
+.fixednav {
+    height: 137px;
+    z-index: 22;
+
+    .top-bar {
+        height: 0;
+    }
+
+    .last-bar {
+        transform: translateY(-45px);
+
+        a {
+            display: none;
+        }
+    }
+}
+
+
+
+
+@keyframes inscreen {
+    0% {
+        right: -260px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes inscreen-en {
+    0% {
+        left: -260px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.inscreen {
+    animation: inscreen 0.5s ease forwards;
+}
+
+html[dir="ltr"] .inscreen {
+    animation: inscreen-en 0.5s ease forwards;
+}
+
+@keyframes outscreen {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -260px;
+    }
+}
+
+.outscreen {
+    animation: outscreen 0.5s ease forwards;
+}
+
+@keyframes outscreen-en {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -260px;
+    }
+}
+
+html[dir="ltr"] .outscreen {
+    animation: outscreen-en 0.5s ease forwards;
+}
+
+@keyframes body-in {
+    0% {
+        transform: translateX(-259px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.body-in {
+    animation: body-in 0.5s ease forwards;
+}
+
+@keyframes body-out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-259px);
+    }
+}
+
+.body-out {
+
+    animation: body-out 0.5s ease forwards;
+}
+
+@keyframes body-in-en {
+    0% {
+        transform: translateX(259px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+html[dir="ltr"] .body-in {
+    animation: body-in-en 0.5s ease forwards;
+}
+
+
+
+@keyframes body-out-en {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(259px);
+    }
+}
+
+html[dir="ltr"] .body-out {
+
+    animation: body-out-en 0.5s ease forwards;
+}
+
+
+
+
+
+@keyframes mega-in {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+    }
+}
+
+.mega-in {
+    animation: mega-in 0.7s ease forwards;
+}
+
+@keyframes mega-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        z-index: -1;
+    }
+}
+
+.mega-out {
+    animation: mega-out 0.3s ease forwards;
+}
+
+
+@keyframes mega-in-en {
+    0% {
+        display: flex;
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+html[dir="ltr"] .mega-in {
+    animation: mega-in-en 0.5s ease forwards;
+}
+
+@keyframes mega-out-en {
+    0% {
+        left: 0;
+    }
+
+    99% {
+        left: -100%;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+html[dir="ltr"] .mega-out {
+    animation: mega-out-en 0.5s ease forwards;
+}

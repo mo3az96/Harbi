@@ -1,0 +1,133 @@
+.search {
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+.search-container {
+    width: 244px;
+    height: 42px;
+    position: relative;
+
+    @media (max-width:991px) {
+        margin: 15px 0;
+    }
+
+    @media (max-width:767px) {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 150px;
+    }
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 0 34px;
+    color: #bbbbbb;
+    font-size: 14px;
+    border: 1px solid transparent;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        color: #bbbbbb;
+        font-size: 14px;
+    }
+
+    &:hover {
+        padding: 0 34px;
+        border: 1px solid transparent;
+    }
+
+    &:focus {
+        border: 1px solid $seccolor;
+        padding: 0 34px;
+    }
+
+    @media (max-width:767px) {
+        background-color: #fff;
+    }
+
+}
+
+.searchbtn {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translatey(-50%) perspective(1px) translateZ(0);
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $seccolor;
+    color: #fff;
+    font-size: 14px;
+    @include transition(all 0.3s ease-in-out);
+
+    vertical-align: middle;
+    box-shadow: 0 0 1px transparent;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $maincolor;
+        border-radius: 25px;
+        -webkit-transform: scalex(0);
+        transform: scalex(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        &::before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+}
+
+html[dir="ltr"] .searchbtn {
+    left: auto;
+    right: 6px;
+}
+
+
+.search-pop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba($maincolor, 0.97);
+    z-index: 9999;
+    left: 0;
+    top: 0;
+
+    .search {
+        display: block;
+    }
+
+    .closebtn {
+        position: absolute;
+        color: #fff;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        cursor: pointer;
+        @include transition(all 0.7s ease-in-out);
+
+        &:hover {
+            transform: translateX(-50%) rotate(360deg)
+        }
+    }
+}

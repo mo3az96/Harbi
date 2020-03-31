@@ -1,0 +1,112 @@
+.header {
+    border-bottom: 1px solid #f4f4f4;
+
+
+}
+
+.main-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+
+
+    @media (max-width:1199px) {
+        justify-content: space-between;
+    }
+
+    @media (max-width:991px) {
+        flex-direction: column;
+    }
+
+    @media (max-width:767px) {
+        padding: 10px 0;
+    }
+
+    .lang {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        color: #999999;
+        font-size: 13px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+
+        @media (max-width:991px) {
+            display: none;
+        }
+    }
+
+    .logo {
+        a {
+            width: 253px;
+            display: block;
+
+            @media (max-width:767px) {
+                width: 200px;
+            }
+        }
+
+        i {
+            display: none;
+            font-size: 20px;
+
+            @media (max-width:767px) {
+                display: flex;
+                color: $thirdcolor;
+            }
+
+        }
+
+        @media (max-width:767px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+html[dir="ltr"] .main-bar {
+    padding-right: 0;
+    padding-left: 15px;
+
+    @media (max-width:767px) {
+        padding: 10px 0;
+    }
+
+    .lang {
+        right: 0;
+        left: auto;
+    }
+}
+
+.store {
+    position: relative;
+
+    .cart-icon {
+        background-color: transparent;
+        color: $seccolor;
+        position: absolute;
+        border-radius: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        @include transition(all 0.2s ease-in-out);
+        font-size: 16px;
+        z-index: 5;
+    }
+
+    &:hover {
+        .cart-icon {
+            top: -25px;
+        }
+    }
+}

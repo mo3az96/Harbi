@@ -1,0 +1,164 @@
+.first-sec {
+    margin-top: 30px;
+
+    .sec-img {
+        max-width: 100%;
+        max-height: 262px;
+        margin-bottom: 38px;
+
+        @media (max-width:991px) {
+            max-height: none;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.page-sec-head {
+    font-size: 20px;
+    color: $thirdcolor;
+    font-family: 'Frutiger-bold';
+    margin-bottom: 15px;
+    text-transform: capitalize;
+
+    @media (max-width:991px) {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &.xs-head {
+        display: none;
+
+        @media (max-width:991px) {
+            display: block;
+        }
+    }
+
+    &.lg-head {
+        display: block;
+
+        @media (max-width:991px) {
+            display: none;
+        }
+    }
+}
+
+.about-word {
+    @media (max-width:991px) {
+        margin-top: 40px;
+    }
+}
+
+.page-sec-text {
+    font-size: 16px;
+    color: $thirdcolor;
+    font-family: 'Frutiger-light';
+    line-height: 1.875;
+    text-align: justify;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.sec-sec {
+    margin-top: 40px;
+}
+
+.feat {
+    margin-top: 15px;
+    background-color: #4e834d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 33px;
+    height: 238px;
+
+    .feat-img {
+        margin-bottom: 10px;
+        width: 49px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-sec-head {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .page-sec-text {
+        color: #fff;
+        text-align: center;
+        line-height: 1.563;
+    }
+}
+
+.third-sec {
+    margin-top: 60px;
+}
+
+.why-harbi {
+    .page-sec-text {
+        display: flex;
+        align-items: flex-start;
+
+        &:before {
+            content: "\f111";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            font-size: 7px;
+            color: #f12f2f;
+            margin-left: 15px;
+            margin-top: 10px;
+
+            html[lang=en] & {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            html[dir=ltr] & {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.policy {
+    @media (max-width:991px) {
+        margin-top: 40px;
+    }
+
+    .page-sec-text {
+        padding-left: 21px;
+
+        html[lang=en] & {
+            padding-left: 0;
+            padding-right: 21px;
+        }
+
+        html[dir=ltr] & {
+            padding-left: 0;
+            padding-right: 21px;
+        }
+    }
+}
+
+.map {
+    height: 331px;
+    width: 100%;
+    margin-top: 80px;
+
+    @media (max-width:991px) {
+        margin-top: 40px;
+    }
+}

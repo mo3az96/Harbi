@@ -1,0 +1,23 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Frutiger;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        background-color: #406140;
+        width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #96be96;
+        width: 3px;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #96be96 #406140;
+}

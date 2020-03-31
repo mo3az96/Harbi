@@ -1,0 +1,97 @@
+.side-bar {
+    .mo-accordion {
+        cursor: pointer;
+        min-width: 100%;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:after {
+            content: '\f078';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-left: 10px;
+            font-size: 8px;
+            color: #92b392;
+        }
+
+        &.mo-active {
+            &:after {
+                content: "\f077";
+            }
+        }
+
+    }
+
+    .mo-panel {
+        background-color: #507f50;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+}
+
+html[dir="ltr"] .side-bar {
+    .mo-accordion {
+        &:after {
+            margin-right: 5px;
+            margin-left: 0;
+        }
+    }
+}
+
+.footer {
+    .mo-accordion {
+        cursor: pointer;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto;
+
+        &:after {
+            content: '\f078';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-left: 30px;
+            font-size: 10px;
+            color: $thirdcolor;
+        }
+
+        &.mo-active {
+            &:after {
+                content: "\f077";
+            }
+        }
+
+        @media (max-width:767px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .mo-panel {
+        background-color: transparent;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 5px;
+    }
+}
+
+html[dir="ltr"] .footer {
+    .mo-accordion {
+        &:after {
+            margin-right: 5px;
+            margin-left: 0;
+        }
+    }
+}

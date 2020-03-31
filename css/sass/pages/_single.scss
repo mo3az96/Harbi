@@ -3,6 +3,11 @@
     font-family: 'Frutiger-bold';
     color: $thirdcolor;
     margin-bottom: 18px;
+
+    @media (max-width:767px) {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 .single-sec-head {

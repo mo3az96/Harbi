@@ -54,12 +54,7 @@
             &.active {
                 color: #b6f5ca;
 
-                @media (max-width:767px) {
-                    width: 60%;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                }
+
             }
 
             a {
@@ -70,6 +65,18 @@
                 &:hover {
                     color: #fff;
                 }
+            }
+        }
+    }
+}
+
+.singlebrad {
+
+    li {
+
+        &.active {
+            @media (max-width:767px) {
+                display: none;
             }
         }
     }

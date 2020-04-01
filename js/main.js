@@ -34,27 +34,27 @@ $(document).ready(function () {
     });
     ////////////////////////////////////////////////////////////
     // Accordion
-    if ($(window).width() <= 767) {
-        $(".foot-nav-links-header").addClass("mo-accordion");
-        $(".foot-links").addClass("mo-panel");
+    // if ($(window).width() <= 767) {
+    //     $(".foot-nav-links-header").addClass("mo-accordion");
+    //     $(".foot-links").addClass("mo-panel");
 
-        $(".newsletter-head").addClass("mo-accordion");
-        $(".news-body").addClass("mo-panel");
-    }
-    var acc = document.getElementsByClassName("mo-accordion");
-    var i;
+    //     $(".newsletter-head").addClass("mo-accordion");
+    //     $(".news-body").addClass("mo-panel");
+    // }
+    // var acc = document.getElementsByClassName("mo-accordion");
+    // var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("mo-active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
+    // for (i = 0; i < acc.length; i++) {
+    //     acc[i].addEventListener("click", function () {
+    //         this.classList.toggle("mo-active");
+    //         var panel = this.nextElementSibling;
+    //         if (panel.style.maxHeight) {
+    //             panel.style.maxHeight = null;
+    //         } else {
+    //             panel.style.maxHeight = panel.scrollHeight + "px";
+    //         }
+    //     });
+    // }
     ////////////////////////////////////////////////////////////
     var swiper = new Swiper('.add-news-slider .swiper-container', {
         loop: true,

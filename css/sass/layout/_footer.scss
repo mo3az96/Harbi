@@ -24,6 +24,10 @@
     color: $thirdcolor;
     margin-bottom: 25px;
 
+    @media (max-width:767px) {
+        text-align: center;
+    }
+
 }
 
 .foot-links {
@@ -34,7 +38,7 @@
     max-height: 140px;
 
     @media (max-width:767px) {
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
         align-items: center;
     }
 }
